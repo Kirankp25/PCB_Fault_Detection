@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PCB_Fault_Detector</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
@@ -14,6 +15,8 @@
 
 <body>
     <script src="app.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+	
 	<form id="inputForm">
 		<div class="header">
 			<div class="header__grid">
@@ -72,13 +75,13 @@
 						<span class="icon">%</span>
 						<input type="number" id="confidence" value="50" max="100" accuracy="2" min="0" class="input input__icon"/></div>
 					</div>
-				<div class="col-6-m3 relative">
+				<!-- <div class="col-6-m3 relative">
 					<label class="input__label" for="overlap">Max Overlap</label>
 					<div>
 						<i class="fas fa-object-ungroup"></i>
 						<span class="icon">%</span>
 						<input type="number" id="overlap" value="50" max="100" accuracy="2" min="0" class="input input__icon"/></div>
-				</div>
+				</div> -->
 				<div class="col-6-m3" id="format">
 					<label class="input__label">Inference Result</label>
 					<div>
@@ -105,7 +108,7 @@
 					</div>
 				</div>
 				<div class="col-12">
-					<button type="submit" value="Run Inference" class="bttn__primary">Run Inference</button>
+					<button type="submit" value="Run Inference" class="bttn__primary">Process Request</button>
 				</div>
 			</div>
 			<div class="result" id="resultContainer">
