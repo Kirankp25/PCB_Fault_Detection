@@ -22,19 +22,25 @@
 			<div class="header__grid">
 				<!-- <img class="header__logo" src=""> -->
 				<div>
-					<label class="header__label" for="model">Project Name</label>
+					<label class="header__label" for="model"></label>
 					<input class="input" type="text" id="model" />
 				</div>
 				<div>
-					<label class="header__label" for="version">version</label>
+					<label class="header__label" for="version"></label>
 					<input class="input" type="number" id="version" />
 				</div>
 				<div>
-					<label class="header__label" for="api_key">User Id</label>
+					<label class="header__label" for="api_key"></label>
 					<input class="input" type="text" id="api_key" />
 				</div>
 			</div>
 		</div>
+		<script>
+			// Set default values using JavaScript
+			document.getElementById('model').value = "Default Project";
+			document.getElementById('version').value = 1;
+			document.getElementById('api_key').value = "Default User Id";
+			</script>
       
 		<div class="content">
 			<div class="content__grid">
@@ -68,13 +74,13 @@
 					<span class="text--small">Separate names with commas</span>
 				</div>
 
-				<div class="col-6-m3 relative">
-					<label class="input__label" for="confidence">Min Confidence</label>
+				<!-- <div class="col-6-m3 relative"> -->
+					<!-- <label class="input__label" for="confidence">Min Confidence</label>
 					<div>
 						<i class="fas fa-crown"></i>
 						<span class="icon">%</span>
 						<input type="number" id="confidence" value="50" max="100" accuracy="2" min="0" class="input input__icon"/></div>
-					</div>
+					</div> -->
 				<!-- <div class="col-6-m3 relative">
 					<label class="input__label" for="overlap">Max Overlap</label>
 					<div>

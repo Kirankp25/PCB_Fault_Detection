@@ -48,8 +48,13 @@ var infer = function() {
 var retrieveDefaultValuesFromLocalStorage = function() {
 	try {
 		var api_key = localStorage.getItem("rf.api_key");
+		
 		var model = localStorage.getItem("rf.model");
+		
 		var format = localStorage.getItem("rf.format");
+		// var api_key ="BMZWLgyNjZUjHKPulyiQ";
+		// var model ="1";
+		// var format ="pcb-fault-detection-rsnn";
 
 		if (api_key) $('#api_key').val(api_key);
 		if (model) $('#model').val(model);
